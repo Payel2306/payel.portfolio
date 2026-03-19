@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Payel Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <!-- NAVBAR -->
@@ -14,8 +16,8 @@
     <a href="#">Home</a>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
-    <a href="#">Projects</a>
-    <a href="#">Contact</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
   </nav>
 </header>
 
@@ -25,19 +27,22 @@
     <p>Hello!</p>
     <h1>I'm <span>Payel Das</span></h1>
     <h3>Fullstack Web Developer</h3>
-    <button class="btn">Hire Me</button>
-    <button class="btn-outline">My Works</button>
+
+    <button class="btn" onclick="scrollToSection('contact')">Hire Me</button>
+    <button class="btn-outline" onclick="scrollToSection('projects')">My Works</button>
   </div>
+
   <div class="hero-img">
-    <img src="profile.jpg"> 
+    <!-- FIXED IMAGE -->
+    <img src="payel.jpg" alt="Payel Das">
   </div>
-</section>    
-  
+</section>
 
 <!-- ABOUT -->
 <section id="about" class="about">
   <div class="about-img">
-    <img src="profile.jpg"> 
+    <!-- FIXED IMAGE -->
+    <img src="payel.jpg" alt="Payel Das">
   </div>
 
   <div class="about-text">
@@ -47,10 +52,8 @@
     <ul>
       <li><strong>Name:</strong> Payel Das</li>
       <li><strong>Email:</strong> daspayel.2306@gmail.com</li>
-      <li><strong>Location:</strong> West Bengal,Purulia</li>
+      <li><strong>Location:</strong> West Bengal, Purulia</li>
     </ul>
-
-    <button class="btn">Download CV</button>
   </div>
 </section>
 
@@ -69,6 +72,25 @@
   </div>
 </section>
 
-<script src="script.js"></script>
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+  <p>Coming soon...</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>Email: daspayel.2306@gmail.com</p>
+</section>
+
+<script>
+function scrollToSection(id) {
+  document.getElementById(id).scrollIntoView({
+    behavior: 'smooth'
+  });
+}
+</script>
+
 </body>
 </html>
