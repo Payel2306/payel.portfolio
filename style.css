@@ -14,7 +14,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 20px 60px;
+  padding: 60px 120px;
 }
 
 nav a {
